@@ -160,9 +160,9 @@ class Mlp(nn.Module):
         model_path = get_path_file('model/mlp.pt')
         torch.save(self.state_dict(), model_path)
         # save the tools used for pre-processing data
-        dump(encoder, open('model/encoder.pkl', 'wb'))
-        dump(lb, open('model/lb.pkl', 'wb'))
-        dump(scaler, open('model/scaler.pkl', 'wb'))
+        dump(encoder, open(get_path_file('model/encoder.pkl'), 'wb'))
+        dump(lb, open(get_path_file('model/lb.pkl'), 'wb'))
+        dump(scaler, open(get_path_file('model/scaler.pkl'), 'wb'))
 
     def load_model(self):
         """

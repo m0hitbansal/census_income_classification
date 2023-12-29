@@ -3,3 +3,5 @@
     autostage = true
 ['remote "s3remote"']
     url = s3://mb-censusbucket
+    access_key_id = AKIA4MFEN7HUKARZR6VR
+    secret_access_key = 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
