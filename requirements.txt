@@ -4,11 +4,11 @@ scikit-learn
 pytest
 # we use pytorch cpu only version to reduce the slug size in Heroku
 -f https://download.pytorch.org/whl/torch_stable.html
-torch==1.4.0+cpu
-optuna ~= 2.10.0
+torch==2.0.0+cpu
+optuna
 dvc
 dvc[s3]
-pyyaml ~= 6.0
+pyyaml
 fastapi
 uvicorn
 gunicorn
