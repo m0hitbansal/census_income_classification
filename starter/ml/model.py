@@ -1,8 +1,8 @@
 """
 Model training and performance evaluation functions. Include also methods for hyper-parameters search.
 
-author: Geoffroy de Gournay
-date: April 27, 2022
+author:Mohit Bansal
+date: Dec 29, 2023
 """
 
 import numpy as np

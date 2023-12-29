@@ -1,8 +1,8 @@
 """
 Implementation of a feed-forward network (multi-layer perceptron, or mlp).
 
-author: Geoffroy de Gournay
-date: April 27, 2022
+author:Mohit Bansal
+date: Dec 29, 2023
 """
 
 import numpy as np

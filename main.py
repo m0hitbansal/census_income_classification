@@ -1,8 +1,8 @@
 """
-FastAPI interface used to make inference on census data using a neural network. The app is deployed on Heroku.
+FastAPI interface used to make inference on census data using a neural network. 
 
-author: Geoffroy de Gournay
-date: Mai 15, 2022
+author: Mohit Bansal
+date: Dec 29, 2023
 """
 import pandas as pd
 
@@ -19,18 +19,6 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(name)s - %(levelname)s - %(message)s")
 logger = logging.getLogger()
 
-
-if "DYNO" in os.environ and os.path.isdir(".dvc"):
-    # This code is necessary for Heroku to use dvc
-    logger.info("Running DVC")
-    os.system("dvc config core.no_scm true")
-    pull_err = os.system("dvc pull")
-    if pull_err != 0:
-        exit(f"dvc pull failed, error {pull_err}")
-    else:
-        logger.info("DVC Pull worked.")
-    logger.info('removing dvc files')
-    os.system("rm -r .dvc .apt/usr/lib/dvc")
 
 
 class CensusItem(BaseModel):

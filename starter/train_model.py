@@ -1,8 +1,8 @@
 """
 Script to train_and_save_model machine learning model and to perform model evaluation on data slices.
 
-author: Geoffroy de Gournay
-date: April 27, 2022
+author:Mohit Bansal
+date: Dec 29, 2023
 """
 
 import pandas as pd

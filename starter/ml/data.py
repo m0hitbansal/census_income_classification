@@ -2,8 +2,8 @@
 Methods related to data manipulation.
 This is a modification of the file provided in the original Udacity repository.
 
-author: Geoffroy de Gournay
-date: April 8, 2022
+author:Mohit Bansal
+date: Dec 29, 2023
 """
 import yaml
 import os
