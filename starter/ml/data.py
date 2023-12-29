@@ -104,9 +104,9 @@ def get_path_root() -> pathlib.PosixPath:
     current_path = Path(os.path.realpath(__file__)).resolve()
     path = current_path
 
-    # When deployed as an app in Heroku the project directory is 'app'
+    
     counter = 0
-    while path.name != 'census_income_classification' and path.name != 'app':
+    while path.name != 'census_income_classification' and path.name != 'src':
         path = path.parent
         counter += 1
         if counter > 100:
